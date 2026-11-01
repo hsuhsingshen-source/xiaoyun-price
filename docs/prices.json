@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 04:23",
+  "updated": "2026-11-02 05:25",
   "lowest_twd": 5480,
   "results": [
     {
@@ -51,10 +51,10 @@
       "name": "環球Online",
       "url": "https://gmonline.twglobalmall.com/product/2EC0321120002583",
       "currency": "TWD",
-      "price": 5480.0,
-      "price_twd": 5480,
-      "error": null,
-      "is_lowest": true
+      "price": null,
+      "price_twd": null,
+      "error": "連線失敗:HTTPError",
+      "is_lowest": false
     },
     {
       "name": "三井3C",
@@ -69,18 +69,18 @@
       "name": "百利市購物中心",
       "url": "https://www.e-payless.com.tw/product/detail/132518",
       "currency": "TWD",
-      "price": 5980.0,
-      "price_twd": 5980,
-      "error": null,
+      "price": null,
+      "price_twd": null,
+      "error": "連線失敗:HTTPError",
       "is_lowest": false
     },
     {
       "name": "YOHO 友和 (香港)",
       "url": "https://www.yohohongkong.com/zh-hk/product/176625-SVICLOUD-%E5%B0%8F%E9%9B%B2-10P-%E6%97%97%E8%89%A6%E7%B4%9A%E5%A4%9A%E5%AA%92%E9%AB%94%E6%92%AD%E6%94%BE%E5%99%A8-%E9%A6%99%E6%B8%AF%E8%A1%8C%E8%B2%A8",
       "currency": "HKD",
-      "price": null,
-      "price_twd": null,
-      "error": "連線失敗:HTTPError",
+      "price": 1680.0,
+      "price_twd": 6888,
+      "error": null,
       "is_lowest": false
     }
   ]
