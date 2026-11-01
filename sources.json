@@ -8,11 +8,93 @@
   },
   "sources": [
     {
+      "name": "小雲台灣 svi.tw",
+      "url": "https://www.svi.tw/item/%E5%B0%8F%E9%9B%B210P",
+      "currency": "TWD",
+      "selector": null,
+      "regex": null,
+      "scan_text": true,
+      "min_price": 3500,
+      "max_price": 7500
+    },
+    {
+      "name": "Yahoo奇摩購物中心",
+      "url": "https://tw.buy.yahoo.com/gdsale/SVICLOUD-%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-10P-%E9%AB%98%E6%B8%85%E9%9B%BB%E8%A6%96%E6%A9%9F%E4%B8%8A%E7%9B%92-11951844.html",
+      "currency": "TWD",
+      "selector": null,
+      "regex": null,
+      "scan_text": true,
+      "min_price": 3500,
+      "max_price": 7500
+    },
+    {
+      "name": "松果購物(店面款)",
+      "url": "https://pcone.com.tw/product/info/260501648256",
+      "currency": "TWD",
+      "selector": null,
+      "regex": null,
+      "scan_text": true,
+      "min_price": 3500,
+      "max_price": 7500
+    },
+    {
+      "name": "松果購物(現貨免運)",
+      "url": "https://pcone.com.tw/product/info/260422370651",
+      "currency": "TWD",
+      "selector": null,
+      "regex": null,
+      "scan_text": true,
+      "min_price": 3500,
+      "max_price": 7500
+    },
+    {
+      "name": "樂天市場 JUMP星球",
+      "url": "https://www.rakuten.com.tw/shop/johnjohn/product/gt5vuu4bm/",
+      "currency": "TWD",
+      "selector": null,
+      "regex": null,
+      "scan_text": true,
+      "min_price": 3500,
+      "max_price": 7500
+    },
+    {
+      "name": "環球Online",
+      "url": "https://gmonline.twglobalmall.com/product/2EC0321120002583",
+      "currency": "TWD",
+      "selector": null,
+      "regex": null,
+      "scan_text": true,
+      "min_price": 3500,
+      "max_price": 7500
+    },
+    {
+      "name": "三井3C",
+      "url": "https://www.sanjing3c.com.tw/prod-CLGY008.html",
+      "currency": "TWD",
+      "selector": null,
+      "regex": null,
+      "scan_text": true,
+      "min_price": 3500,
+      "max_price": 7500
+    },
+    {
+      "name": "百利市購物中心",
+      "url": "https://www.e-payless.com.tw/product/detail/132518",
+      "currency": "TWD",
+      "selector": null,
+      "regex": null,
+      "scan_text": true,
+      "min_price": 3500,
+      "max_price": 7500
+    },
+    {
       "name": "YOHO 友和 (香港)",
       "url": "https://www.yohohongkong.com/zh-hk/product/176625-SVICLOUD-%E5%B0%8F%E9%9B%B2-10P-%E6%97%97%E8%89%A6%E7%B4%9A%E5%A4%9A%E5%AA%92%E9%AB%94%E6%92%AD%E6%94%BE%E5%99%A8-%E9%A6%99%E6%B8%AF%E8%A1%8C%E8%B2%A8",
       "currency": "HKD",
       "selector": null,
-      "regex": "HK\\$\\s*([\\d,]+(?:\\.\\d+)?)"
+      "regex": "HK\\$\\s*([\\d,]+(?:\\.\\d+)?)",
+      "min_price": 1200,
+      "max_price": 2500
     }
   ]
 }

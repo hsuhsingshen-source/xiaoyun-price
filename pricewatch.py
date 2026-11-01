@@ -95,23 +95,44 @@ def price_from_meta(soup):
     return None
 
 
+PRICE_IN_TEXT = re.compile(r"(?:NT\$|NTD|\$|＄)\s*([\d,]{3,}(?:\.\d+)?)")
+
+
 def extract_price(page_html, source):
-    """依序嘗試:CSS selector -> regex -> JSON-LD -> meta"""
+    """
+    依序收集候選價格:CSS selector -> regex -> JSON-LD -> meta -> (scan_text)網頁文字中的 $ 金額。
+    若設定了 min_price / max_price,只接受落在範圍內的第一個價格,
+    這樣不會把運費門檻、配件價格誤當成商品價格。
+    """
     soup = BeautifulSoup(page_html, "html.parser")
+    lo = source.get("min_price")
+    hi = source.get("max_price")
+
+    def ok(v):
+        return v is not None and (lo is None or v >= lo) and (hi is None or v <= hi)
+
+    text = soup.get_text(" ", strip=True)
+    candidates = []
 
     if source.get("selector"):
-        el = soup.select_one(source["selector"])
-        if el:
-            value = to_number(el.get("content") or el.get_text(" ", strip=True))
-            if value:
-                return value
+        for el in soup.select(source["selector"]):
+            candidates.append(to_number(el.get("content") or el.get_text(" ", strip=True)))
 
     if source.get("regex"):
-        m = re.search(source["regex"], soup.get_text(" ", strip=True))
-        if m and to_number(m.group(1)):
-            return to_number(m.group(1))
+        for m in re.finditer(source["regex"], text):
+            candidates.append(to_number(m.group(1)))
 
-    return price_from_json_ld(soup) or price_from_meta(soup)
+    candidates.append(price_from_json_ld(soup))
+    candidates.append(price_from_meta(soup))
+
+    if source.get("scan_text"):
+        for m in PRICE_IN_TEXT.finditer(text):
+            candidates.append(to_number(m.group(1)))
+
+    for v in candidates:
+        if ok(v):
+            return v
+    return None
 
 
 def fetch_one(source, rates):
@@ -129,7 +150,7 @@ def fetch_one(source, rates):
         resp.encoding = resp.apparent_encoding or resp.encoding
         price = extract_price(resp.text, source)
         if price is None:
-            result["error"] = "找不到價格(請設定 selector 或 regex)"
+            result["error"] = "找不到合理範圍內的價格(頁面可能需要 JavaScript 或擋掉機器人)"
         else:
             rate = rates.get(source["currency"])
             if rate is None:
