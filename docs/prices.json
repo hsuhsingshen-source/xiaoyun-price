@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04 06:29",
+  "updated": "2026-11-04 07:29",
   "lowest_twd": 5480,
   "results": [
     {
@@ -60,10 +60,10 @@
       "name": "三井3C",
       "url": "https://www.sanjing3c.com.tw/prod-CLGY008.html",
       "currency": "TWD",
-      "price": null,
-      "price_twd": null,
-      "error": "連線失敗:ReadTimeout",
-      "is_lowest": false
+      "price": 5480.0,
+      "price_twd": 5480,
+      "error": null,
+      "is_lowest": true
     },
     {
       "name": "百利市購物中心",
