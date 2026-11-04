@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04 14:53",
+  "updated": "2026-11-04 16:09",
   "lowest_twd": 5480,
   "results": [
     {
@@ -78,8 +78,8 @@
       "name": "YOHO 友和 (香港)",
       "url": "https://www.yohohongkong.com/zh-hk/product/176625-SVICLOUD-%E5%B0%8F%E9%9B%B2-10P-%E6%97%97%E8%89%A6%E7%B4%9A%E5%A4%9A%E5%AA%92%E9%AB%94%E6%92%AD%E6%94%BE%E5%99%A8-%E9%A6%99%E6%B8%AF%E8%A1%8C%E8%B2%A8",
       "currency": "HKD",
-      "price": 1680.0,
-      "price_twd": 6888,
+      "price": 1650.0,
+      "price_twd": 6765,
       "error": null,
       "is_lowest": false
     }
