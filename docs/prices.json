@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06 03:43",
+  "updated": "2026-11-06 04:38",
   "lowest_twd": 5480,
   "results": [
     {
@@ -69,9 +69,9 @@
       "name": "百利市購物中心",
       "url": "https://www.e-payless.com.tw/product/detail/132518",
       "currency": "TWD",
-      "price": null,
-      "price_twd": null,
-      "error": "連線失敗:HTTPError",
+      "price": 5980.0,
+      "price_twd": 5980,
+      "error": null,
       "is_lowest": false
     },
     {
