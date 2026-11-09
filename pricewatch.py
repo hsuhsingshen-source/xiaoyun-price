@@ -207,6 +207,7 @@ def fetch_biggo(source, rates):
       must_include    標題必須全部包含的字(不分大小寫),例如 ["15P"]
       must_exclude    標題只要含其中任何一個就排除,例如 ["10P", "遙控", "二手"]
       include_stores  只保留店名含這些字的結果,例如 ["蝦皮", "momo"];不填就全部保留
+      exclude_stores  店名含這些字的結果直接排除,用來略過已有直接來源的商店,例如 ["PChome"]
       min_price / max_price   價格合理範圍,擋掉配件與不相干商品
       max_results     最多顯示幾筆(取最低價),預設 8
       region / site   預設 tw / biggo.com.tw
@@ -243,6 +244,7 @@ def fetch_biggo(source, rates):
     must_in = [s.lower() for s in source.get("must_include", [])]
     must_out = [s.lower() for s in source.get("must_exclude", [])]
     stores_ok = [s.lower() for s in source.get("include_stores", [])]
+    stores_no = [s.lower() for s in source.get("exclude_stores", [])]
     lo, hi = source.get("min_price"), source.get("max_price")
     domain = source.get("site", "biggo.com.tw")
 
@@ -260,6 +262,8 @@ def fetch_biggo(source, rates):
         store = str((it.get("store") or {}).get("name") or "").strip()
         shop = str((it.get("shop") or {}).get("name") or "").strip()
         if stores_ok and not any(k in store.lower() for k in stores_ok):
+            continue
+        if any(k in store.lower() for k in stores_no):
             continue
         cur = str(it.get("currency") or "TWD").upper()
         rate = rates.get(cur, rates.get("TWD", 1.0) if cur in ("", "$", "NT$") else None)

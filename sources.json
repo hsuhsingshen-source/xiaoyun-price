@@ -109,14 +109,16 @@
         "電池",
         "支架"
       ],
-      "include_stores": [
-        "蝦皮",
-        "shopee",
-        "momo"
-      ],
       "min_price": 4000,
       "max_price": 8000,
-      "max_results": 8
+      "max_results": 10,
+      "exclude_stores": [
+        "PChome",
+        "myfone",
+        "台灣大哥大",
+        "svi.tw",
+        "台灣優質數位"
+      ]
     }
   ]
 }
