@@ -1,55 +1,10 @@
 {
-  "updated": "2026-11-09 09:57",
-  "lowest_twd": 5480,
+  "updated": "2026-11-09 10:25",
+  "lowest_twd": 5880,
   "results": [
     {
-      "name": "小雲台灣 svi.tw",
-      "url": "https://www.svi.tw/item/%E5%B0%8F%E9%9B%B210P",
-      "currency": "TWD",
-      "price": null,
-      "price_twd": null,
-      "error": "找不到合理範圍內的價格(頁面可能需要 JavaScript 或擋掉機器人)",
-      "is_lowest": false
-    },
-    {
-      "name": "Yahoo奇摩購物中心",
-      "url": "https://tw.buy.yahoo.com/gdsale/SVICLOUD-%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-10P-%E9%AB%98%E6%B8%85%E9%9B%BB%E8%A6%96%E6%A9%9F%E4%B8%8A%E7%9B%92-11951844.html",
-      "currency": "TWD",
-      "price": 5480.0,
-      "price_twd": 5480,
-      "error": null,
-      "is_lowest": true
-    },
-    {
-      "name": "松果購物(店面款)",
-      "url": "https://pcone.com.tw/product/info/260501648256",
-      "currency": "TWD",
-      "price": 5480.0,
-      "price_twd": 5480,
-      "error": null,
-      "is_lowest": true
-    },
-    {
-      "name": "松果購物(現貨免運)",
-      "url": "https://pcone.com.tw/product/info/260422370651",
-      "currency": "TWD",
-      "price": 5480.0,
-      "price_twd": 5480,
-      "error": null,
-      "is_lowest": true
-    },
-    {
-      "name": "樂天市場 JUMP星球",
-      "url": "https://www.rakuten.com.tw/shop/johnjohn/product/gt5vuu4bm/",
-      "currency": "TWD",
-      "price": null,
-      "price_twd": null,
-      "error": "連線失敗:ReadTimeout",
-      "is_lowest": false
-    },
-    {
-      "name": "環球Online",
-      "url": "https://gmonline.twglobalmall.com/product/2EC0321120002583",
+      "name": "momo購物網(公司貨)",
+      "url": "https://www.momoshop.com.tw/product/15602017",
       "currency": "TWD",
       "price": null,
       "price_twd": null,
@@ -57,30 +12,66 @@
       "is_lowest": false
     },
     {
-      "name": "三井3C",
-      "url": "https://www.sanjing3c.com.tw/prod-CLGY008.html",
+      "name": "momo購物網(AI語音版)",
+      "url": "https://www.momoshop.com.tw/product/15628757",
       "currency": "TWD",
-      "price": 5480.0,
-      "price_twd": 5480,
+      "price": null,
+      "price_twd": null,
+      "error": "連線失敗:HTTPError",
+      "is_lowest": false
+    },
+    {
+      "name": "momo購物網(原廠授權)",
+      "url": "https://www.momoshop.com.tw/TP/TP0000160/goodsDetail/TP00001600000735",
+      "currency": "TWD",
+      "price": null,
+      "price_twd": null,
+      "error": "連線失敗:HTTPError",
+      "is_lowest": false
+    },
+    {
+      "name": "myfone 台灣大哥大",
+      "url": "https://www.myfone.com.tw/mfo/buy/prod/P0000203781632",
+      "currency": "TWD",
+      "price": 5880.0,
+      "price_twd": 5880,
       "error": null,
       "is_lowest": true
     },
     {
-      "name": "百利市購物中心",
-      "url": "https://www.e-payless.com.tw/product/detail/132518",
+      "name": "PChome 24h(DMAAPP)",
+      "url": "https://24h.pchome.com.tw/prod/DMAAPP-A900KECN6",
       "currency": "TWD",
-      "price": 5980.0,
-      "price_twd": 5980,
+      "price": 5880.0,
+      "price_twd": 5880,
       "error": null,
+      "is_lowest": true
+    },
+    {
+      "name": "PChome 24h(SVI 小雲盒子)",
+      "url": "https://24h.pchome.com.tw/prod/DMAACN-A900KDF9K",
+      "currency": "TWD",
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
+    },
+    {
+      "name": "小雲台灣 svi.tw",
+      "url": "https://www.svi.tw/item/%E5%B0%8F%E9%9B%B215P",
+      "currency": "TWD",
+      "price": null,
+      "price_twd": null,
+      "error": "找不到合理範圍內的價格(頁面可能需要 JavaScript 或擋掉機器人)",
       "is_lowest": false
     },
     {
-      "name": "YOHO 友和 (香港)",
-      "url": "https://www.yohohongkong.com/zh-hk/product/176625-SVICLOUD-%E5%B0%8F%E9%9B%B2-10P-%E6%97%97%E8%89%A6%E7%B4%9A%E5%A4%9A%E5%AA%92%E9%AB%94%E6%92%AD%E6%94%BE%E5%99%A8-%E9%A6%99%E6%B8%AF%E8%A1%8C%E8%B2%A8",
-      "currency": "HKD",
-      "price": 1650.0,
-      "price_twd": 6765,
-      "error": null,
+      "name": "台灣優質數位(授權代理)",
+      "url": "https://www.svicloud.com.tw/in_product.html",
+      "currency": "TWD",
+      "price": null,
+      "price_twd": null,
+      "error": "找不到合理範圍內的價格(頁面可能需要 JavaScript 或擋掉機器人)",
       "is_lowest": false
     }
   ]
