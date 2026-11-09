@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09 15:04",
+  "updated": "2026-11-09 15:09",
   "lowest_twd": 5880,
   "results": [
     {
@@ -8,7 +8,7 @@
       "currency": "TWD",
       "price": null,
       "price_twd": null,
-      "error": "連線失敗:HTTPError",
+      "error": "網站回應 HTTP 403(網站擋掉了自動讀取)",
       "is_lowest": false
     },
     {
@@ -17,7 +17,7 @@
       "currency": "TWD",
       "price": null,
       "price_twd": null,
-      "error": "連線失敗:HTTPError",
+      "error": "網站回應 HTTP 403(網站擋掉了自動讀取)",
       "is_lowest": false
     },
     {
@@ -26,7 +26,7 @@
       "currency": "TWD",
       "price": null,
       "price_twd": null,
-      "error": "連線失敗:HTTPError",
+      "error": "網站回應 HTTP 403(網站擋掉了自動讀取)",
       "is_lowest": false
     },
     {
@@ -60,19 +60,73 @@
       "name": "小雲台灣 svi.tw",
       "url": "https://www.svi.tw/item/%E5%B0%8F%E9%9B%B215P",
       "currency": "TWD",
-      "price": null,
-      "price_twd": null,
-      "error": "找不到合理範圍內的價格(頁面可能需要 JavaScript 或擋掉機器人)",
-      "is_lowest": false
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
     },
     {
       "name": "台灣優質數位(授權代理)",
       "url": "https://www.svicloud.com.tw/in_product.html",
       "currency": "TWD",
-      "price": null,
-      "price_twd": null,
-      "error": "找不到合理範圍內的價格(頁面可能需要 JavaScript 或擋掉機器人)",
-      "is_lowest": false
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
+    },
+    {
+      "name": "BigGo:蝦皮商城(聯遠通訊3C)",
+      "url": "https://biggo.com.tw/r/?i=tw_mall_shopeemall&id=8045130.41184054380&purl=https%3A%2F%2Fshopee.tw%2Fproduct%2F8045130%2F41184054380&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P",
+      "currency": "TWD",
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
+    },
+    {
+      "name": "BigGo:momo購物網",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_momoshop&id=15602017&purl=https%3A%2F%2Fwww.momoshop.com.tw%2Fproduct%2F15602017&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P",
+      "currency": "TWD",
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
+    },
+    {
+      "name": "BigGo:momo購物網",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_momoshop&id=15678983&purl=https%3A%2F%2Fwww.momoshop.com.tw%2Fproduct%2F15678983&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P",
+      "currency": "TWD",
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
+    },
+    {
+      "name": "BigGo:momo購物網",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_momoshop&id=15645481&purl=https%3A%2F%2Fwww.momoshop.com.tw%2Fproduct%2F15645481&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P",
+      "currency": "TWD",
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
+    },
+    {
+      "name": "BigGo:蝦皮商城(QinD 3C 手機 電腦 周邊配件商城)",
+      "url": "https://biggo.com.tw/r/?i=tw_mall_shopeemall&id=360964681.52766909512&purl=https%3A%2F%2Fshopee.tw%2Fproduct%2F360964681%2F52766909512&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P",
+      "currency": "TWD",
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
+    },
+    {
+      "name": "BigGo:momo購物網",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_momoshop&id=15684033&purl=https%3A%2F%2Fwww.momoshop.com.tw%2Fproduct%2F15684033&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P",
+      "currency": "TWD",
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
     }
   ]
 }
