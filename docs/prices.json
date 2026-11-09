@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09 20:51",
+  "updated": "2026-11-09 22:08",
   "lowest_twd": 5880,
   "results": [
     {
@@ -147,8 +147,8 @@
       "is_lowest": true
     },
     {
-      "name": "BigGo:Yahoo購物中心",
-      "url": "https://biggo.com.tw/r/?i=tw_pec_ybuy&id=12284664&purl=https%3A%2F%2Ftw.buy.yahoo.com%2Fgdsale%2FSVICLOUD%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-15P-4K%E8%AA%9E%E9%9F%B3%E6%99%BA%E6%85%A7%E9%9B%BB%E8%A6%96%E7%9B%92-%E5%AE%89%E5%8D%93%E6%A9%9F%E4%B8%8A%E7%9B%92-12284664.html&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P",
+      "name": "BigGo:樂天市場(3C達人 宇威通訊  二手機專賣店)",
+      "url": "https://biggo.com.tw/r/?i=tw_pmall_rakuten&id=ctlpaint_1NLX28EUW&purl=https%3A%2F%2Fwww.rakuten.com.tw%2Fshop%2Fctlpaint%2Fproduct%2F1nlx28euw%2F&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P",
       "currency": "TWD",
       "price": 5880.0,
       "price_twd": 5880,
@@ -156,8 +156,8 @@
       "is_lowest": true
     },
     {
-      "name": "BigGo:樂天市場(3C達人 宇威通訊  二手機專賣店)",
-      "url": "https://biggo.com.tw/r/?i=tw_pmall_rakuten&id=ctlpaint_1NLX28EUW&purl=https%3A%2F%2Fwww.rakuten.com.tw%2Fshop%2Fctlpaint%2Fproduct%2F1nlx28euw%2F&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P",
+      "name": "BigGo:Yahoo購物中心",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_ybuy&id=12284664&purl=https%3A%2F%2Ftw.buy.yahoo.com%2Fgdsale%2FSVICLOUD%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-15P-4K%E8%AA%9E%E9%9F%B3%E6%99%BA%E6%85%A7%E9%9B%BB%E8%A6%96%E7%9B%92-%E5%AE%89%E5%8D%93%E6%A9%9F%E4%B8%8A%E7%9B%92-12284664.html&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P",
       "currency": "TWD",
       "price": 5880.0,
       "price_twd": 5880,
