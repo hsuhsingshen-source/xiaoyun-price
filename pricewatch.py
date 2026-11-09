@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-小雲 10P+ 比價網站產生器
+小雲比價網站產生器
 
 讀取 sources.json 裡的商店頁面,抓價格、換算成新台幣,
 把結果寫成 docs/index.html(最低價黃色標示)、docs/prices.json,
@@ -20,6 +20,7 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote
 from zoneinfo import ZoneInfo
 
 import requests
@@ -104,6 +105,7 @@ def extract_price(page_html, source):
     若設定了 min_price / max_price,只接受落在範圍內的第一個價格,
     這樣不會把運費門檻、配件價格誤當成商品價格。
     """
+    # 傳入 bytes,讓 BeautifulSoup 依網頁自己宣告的編碼解碼,避免亂碼
     soup = BeautifulSoup(page_html, "html.parser")
     lo = source.get("min_price")
     hi = source.get("max_price")
@@ -132,7 +134,25 @@ def extract_price(page_html, source):
     for v in candidates:
         if ok(v):
             return v
+
+    # 寬鬆模式(要在 sources.json 設 "loose": true 才會啟用):
+    # 價格沒有 $ 符號、或藏在網頁原始碼裡時,改找所有「x,xxx」格式的數字,
+    # 取落在範圍內的最小值(原價一定比特價高,所以最小值通常是現價)。
+    # 一定要搭配 min_price / max_price 使用。
+    if source.get("loose") and (lo is not None or hi is not None):
+        raw = soup.decode()
+        found = []
+        for chunk in (text, raw):
+            for m in LOOSE_NUMBER.finditer(chunk):
+                v = to_number(m.group(1))
+                if ok(v):
+                    found.append(v)
+            if found:
+                return min(found)
     return None
+
+
+LOOSE_NUMBER = re.compile(r"(?<![\d,.])(\d{1,2},\d{3})(?![\d,])")
 
 
 def fetch_one(source, rates):
@@ -147,10 +167,12 @@ def fetch_one(source, rates):
     try:
         resp = requests.get(source["url"], headers=HEADERS, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
-        resp.encoding = resp.apparent_encoding or resp.encoding
-        price = extract_price(resp.text, source)
+        price = extract_price(resp.content, source)
         if price is None:
-            result["error"] = "找不到合理範圍內的價格(頁面可能需要 JavaScript 或擋掉機器人)"
+            result["error"] = (
+                f"頁面讀到了({len(resp.content):,} 位元組)但找不到合理範圍內的價格,"
+                "可能是價格由 JavaScript 載入"
+            )
         else:
             rate = rates.get(source["currency"])
             if rate is None:
@@ -158,9 +180,106 @@ def fetch_one(source, rates):
             else:
                 result["price"] = price
                 result["price_twd"] = round(price * rate)
+    except requests.HTTPError as exc:
+        code = exc.response.status_code if exc.response is not None else "?"
+        hint = "(網站擋掉了自動讀取)" if code in (403, 429, 503) else ""
+        result["error"] = f"網站回應 HTTP {code}{hint}"
     except requests.RequestException as exc:
         result["error"] = f"連線失敗:{exc.__class__.__name__}"
     return result
+
+
+BIGGO_HEADERS = {
+    "User-Agent": "pricewatch-personal/1.0 (personal price tracker)",
+    "Content-Type": "application/json",
+}
+
+
+def fetch_biggo(source, rates):
+    """
+    透過 BigGo 的搜尋資料取得蝦皮、momo 等平台的價格(這些平台本身無法直接讀取)。
+    使用的是 BigGo 官方開源 MCP 伺服器所呼叫的同一個搜尋端點,不需要金鑰。
+    這不是有文件的公開 API,日後可能改版;改版時會顯示「取價失敗」。
+
+    設定欄位(sources.json):
+      type            "biggo"
+      query           搜尋關鍵字,例如 "小雲15P"
+      must_include    標題必須全部包含的字(不分大小寫),例如 ["15P"]
+      must_exclude    標題只要含其中任何一個就排除,例如 ["10P", "遙控", "二手"]
+      include_stores  只保留店名含這些字的結果,例如 ["蝦皮", "momo"];不填就全部保留
+      min_price / max_price   價格合理範圍,擋掉配件與不相干商品
+      max_results     最多顯示幾筆(取最低價),預設 8
+      region / site   預設 tw / biggo.com.tw
+      api_base        預設 https://api.biggo.com
+    """
+    label = source.get("name", "BigGo")
+    fail = {
+        "name": label, "url": f"https://biggo.com.tw/s/{quote(source['query'])}/",
+        "currency": "TWD", "price": None, "price_twd": None, "error": None,
+    }
+    api_base = source.get("api_base", "https://api.biggo.com").rstrip("/")
+    url = f"{api_base}/api/v1/spa/search/{quote(source['query'], safe='')}/product"
+    headers = dict(BIGGO_HEADERS)
+    headers["site"] = source.get("site", "biggo.com.tw")
+    headers["region"] = source.get("region", "tw")
+
+    try:
+        resp = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
+        resp.raise_for_status()
+        data = resp.json()
+    except requests.HTTPError as exc:
+        code = exc.response.status_code if exc.response is not None else "?"
+        fail["error"] = f"BigGo 回應 HTTP {code}"
+        return [fail]
+    except (requests.RequestException, ValueError) as exc:
+        fail["error"] = f"BigGo 連線或解析失敗:{exc.__class__.__name__}"
+        return [fail]
+
+    items = data.get("list") if isinstance(data, dict) else None
+    if not isinstance(items, list):
+        fail["error"] = "BigGo 回傳格式不符預期(可能已改版)"
+        return [fail]
+
+    must_in = [s.lower() for s in source.get("must_include", [])]
+    must_out = [s.lower() for s in source.get("must_exclude", [])]
+    stores_ok = [s.lower() for s in source.get("include_stores", [])]
+    lo, hi = source.get("min_price"), source.get("max_price")
+    domain = source.get("site", "biggo.com.tw")
+
+    rows = []
+    for it in items:
+        if not isinstance(it, dict):
+            continue
+        title = str(it.get("title") or "")
+        t = title.lower()
+        if any(k not in t for k in must_in) or any(k in t for k in must_out):
+            continue
+        price = to_number(it.get("price"))
+        if price is None or (lo is not None and price < lo) or (hi is not None and price > hi):
+            continue
+        store = str((it.get("store") or {}).get("name") or "").strip()
+        shop = str((it.get("shop") or {}).get("name") or "").strip()
+        if stores_ok and not any(k in store.lower() for k in stores_ok):
+            continue
+        cur = str(it.get("currency") or "TWD").upper()
+        rate = rates.get(cur, rates.get("TWD", 1.0) if cur in ("", "$", "NT$") else None)
+        if rate is None:
+            continue
+        link = it.get("affurl") or it.get("url") or ""
+        if isinstance(link, str) and link.startswith("/"):
+            link = f"https://{domain}{link}"
+        name = f"{label}:{store or '未知商店'}" + (f"({shop})" if shop else "")
+        rows.append({
+            "name": name, "url": link or fail["url"], "currency": cur if cur in rates else "TWD",
+            "price": price, "price_twd": round(price * rate), "error": None,
+        })
+
+    rows.sort(key=lambda r: r["price_twd"])
+    rows = rows[: source.get("max_results", 8)]
+    if not rows:
+        fail["error"] = "BigGo 搜尋有結果,但沒有符合條件的商品(關鍵字、商店或價格範圍都被濾掉了)"
+        return [fail]
+    return rows
 
 
 def mark_lowest(results):
@@ -243,7 +362,7 @@ def trend_svg(points):
 # ----------------------------------------------------------------------
 def write_site(results, stamp, config, lowest):
     OUT_DIR.mkdir(exist_ok=True)
-    title = config.get("title", "小雲 10P+ 比價")
+    title = config.get("title", "小雲 15P 比價")
 
     ordered = sorted(results, key=lambda x: (x["price_twd"] is None, x["price_twd"] or 0))
     rows = []
@@ -319,7 +438,12 @@ def main():
         sys.exit("sources.json 的 sources 是空的,請先加入商店。")
 
     stamp = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
-    results = [fetch_one(s, rates) for s in sources]
+    results = []
+    for s in sources:
+        if s.get("type") == "biggo":
+            results.extend(fetch_biggo(s, rates))
+        else:
+            results.append(fetch_one(s, rates))
     lowest = mark_lowest(results)
 
     append_history(results, stamp)

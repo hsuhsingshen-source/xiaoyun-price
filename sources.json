@@ -75,7 +75,8 @@
       "regex": null,
       "scan_text": true,
       "min_price": 4000,
-      "max_price": 8000
+      "max_price": 8000,
+      "loose": true
     },
     {
       "name": "台灣優質數位(授權代理)",
@@ -85,7 +86,37 @@
       "regex": "優惠價\\D{0,8}([\\d,]{4,})",
       "scan_text": false,
       "min_price": 4000,
-      "max_price": 8000
+      "max_price": 8000,
+      "loose": true
+    },
+    {
+      "type": "biggo",
+      "name": "BigGo",
+      "query": "小雲15P",
+      "must_include": [
+        "15P"
+      ],
+      "must_exclude": [
+        "10P",
+        "9P",
+        "遙控",
+        "二手",
+        "9成新",
+        "9.9成新",
+        "展示",
+        "出租",
+        "租",
+        "電池",
+        "支架"
+      ],
+      "include_stores": [
+        "蝦皮",
+        "shopee",
+        "momo"
+      ],
+      "min_price": 4000,
+      "max_price": 8000,
+      "max_results": 8
     }
   ]
 }
