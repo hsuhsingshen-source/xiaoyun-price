@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 00:50",
+  "updated": "2026-11-13 01:43",
   "lowest_twd": 5880,
   "results": [
     {
@@ -80,7 +80,7 @@
       "currency": "TWD",
       "price": null,
       "price_twd": null,
-      "error": "BigGo 連線或解析失敗:ConnectTimeout",
+      "error": "BigGo 回應 HTTP 429",
       "is_lowest": false
     }
   ]
