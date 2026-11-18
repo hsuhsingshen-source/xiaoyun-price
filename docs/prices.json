@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18 13:52",
+  "updated": "2026-11-18 14:56",
   "lowest_twd": 5880,
   "results": [
     {
@@ -76,25 +76,7 @@
     },
     {
       "name": "BigGo:酷澎 Coupang",
-      "url": "https://biggo.com.tw/r/?i=tw_pec_coupang&id=706733760364606&purl=https%3A%2F%2Fcoupang.onelink.me%2FyowQ%3FpageKey%3D706733760364606%26ctag%3D706733760364606%26itemId%3D706733760331841%26vendorItemId%3D706733760430105%26pid%3Dcoupang_partners%26c%3DAF8782393%26is_retargeting%3Dtrue%26af_reengagement_window%3D7d%26af_c_id%3DAF8782393%26af_sub5%3DTWAFSDP%26af_click_lookback%3D7d%26deep_link_value%3Dcoupang%253A%252F%252Fproduct%253FpId%253D706733760364606%2526itemId%253D706733760331841%2526vendorItemId%253D706733760430105%26af_r%3Dhttps%253A%252F%252Flink.tw.coupang.com%252Fre2%252FTWAFSDP%253Flptag%253DAF8782393&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795067582.vupqXf8dvBlOB_C4Ww-kcgGrOghgv7zOsEpvpmFCbT0",
-      "currency": "TWD",
-      "price": 5880.0,
-      "price_twd": 5880,
-      "error": null,
-      "is_lowest": true
-    },
-    {
-      "name": "BigGo:酷澎 Coupang",
-      "url": "https://biggo.com.tw/r/?i=tw_pec_coupang&id=729196951027844&purl=https%3A%2F%2Fcoupang.onelink.me%2FyowQ%3FpageKey%3D729196951027844%26ctag%3D729196951027844%26itemId%3D729196951093384%26vendorItemId%3D729196951093358%26pid%3Dcoupang_partners%26c%3DAF8782393%26is_retargeting%3Dtrue%26af_reengagement_window%3D7d%26af_c_id%3DAF8782393%26af_sub5%3DTWAFSDP%26af_click_lookback%3D7d%26deep_link_value%3Dcoupang%253A%252F%252Fproduct%253FpId%253D729196951027844%2526itemId%253D729196951093384%2526vendorItemId%253D729196951093358%26af_r%3Dhttps%253A%252F%252Flink.tw.coupang.com%252Fre2%252FTWAFSDP%253Flptag%253DAF8782393&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795067582.5tSMfXD6zAud1okN4IX8mGhkK3OWEFQm4coWTqttEnk",
-      "currency": "TWD",
-      "price": 5880.0,
-      "price_twd": 5880,
-      "error": null,
-      "is_lowest": true
-    },
-    {
-      "name": "BigGo:酷澎 Coupang",
-      "url": "https://biggo.com.tw/r/?i=tw_pec_coupang&id=729896242151434&purl=https%3A%2F%2Fcoupang.onelink.me%2FyowQ%3FpageKey%3D729896242151434%26ctag%3D729896242151434%26itemId%3D729896242135053%26vendorItemId%3D729896238055510%26pid%3Dcoupang_partners%26c%3DAF8782393%26is_retargeting%3Dtrue%26af_reengagement_window%3D7d%26af_c_id%3DAF8782393%26af_sub5%3DTWAFSDP%26af_click_lookback%3D7d%26deep_link_value%3Dcoupang%253A%252F%252Fproduct%253FpId%253D729896242151434%2526itemId%253D729896242135053%2526vendorItemId%253D729896238055510%26af_r%3Dhttps%253A%252F%252Flink.tw.coupang.com%252Fre2%252FTWAFSDP%253Flptag%253DAF8782393&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795067582.kJt6Ld2nhRDK4auVXkNYzG3tze63g4r8tESuIb1fpD4",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_coupang&id=706733760364606&purl=https%3A%2F%2Fcoupang.onelink.me%2FyowQ%3FpageKey%3D706733760364606%26ctag%3D706733760364606%26itemId%3D706733760331841%26vendorItemId%3D706733760430105%26pid%3Dcoupang_partners%26c%3DAF8782393%26is_retargeting%3Dtrue%26af_reengagement_window%3D7d%26af_c_id%3DAF8782393%26af_sub5%3DTWAFSDP%26af_click_lookback%3D7d%26deep_link_value%3Dcoupang%253A%252F%252Fproduct%253FpId%253D706733760364606%2526itemId%253D706733760331841%2526vendorItemId%253D706733760430105%26af_r%3Dhttps%253A%252F%252Flink.tw.coupang.com%252Fre2%252FTWAFSDP%253Flptag%253DAF8782393&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795071396.QjNiCKigaHM8dbFgma76HRSZ9gk7fPRvFRFFR57PRLI",
       "currency": "TWD",
       "price": 5880.0,
       "price_twd": 5880,
@@ -103,7 +85,7 @@
     },
     {
       "name": "BigGo:Yahoo購物中心",
-      "url": "https://biggo.com.tw/r/?i=tw_pec_ybuy&id=12255567&purl=https%3A%2F%2Ftw.buy.yahoo.com%2Fgdsale%2FSVICLOUD-%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-15P-%E9%9B%BB%E8%A6%96%E6%A9%9F%E4%B8%8A%E7%9B%92-12255567.html&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795067582.Y4gNRi49TV-ymO7_a43om4uKA_dGIQ6ADbGgHdsB3iU",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_ybuy&id=12255567&purl=https%3A%2F%2Ftw.buy.yahoo.com%2Fgdsale%2FSVICLOUD-%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-15P-%E9%9B%BB%E8%A6%96%E6%A9%9F%E4%B8%8A%E7%9B%92-12255567.html&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795071396.mPFfc3LW-xm5qEpoBwYvz7Aqm1Zi8LiP7DAT0tIfcP4",
       "currency": "TWD",
       "price": 5880.0,
       "price_twd": 5880,
@@ -112,7 +94,7 @@
     },
     {
       "name": "BigGo:樂天市場(強尼拍賣)",
-      "url": "https://biggo.com.tw/r/?i=tw_pmall_rakuten&id=johnny-shop_M20K4YFJT&purl=https%3A%2F%2Fwww.rakuten.com.tw%2Fshop%2Fjohnny-shop%2Fproduct%2Fm20k4yfjt%2F&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795067582.C3PMZvzPqbJ3puDWJo_I4NgkRViclgElirvePuTJwzo",
+      "url": "https://biggo.com.tw/r/?i=tw_pmall_rakuten&id=johnny-shop_M20K4YFJT&purl=https%3A%2F%2Fwww.rakuten.com.tw%2Fshop%2Fjohnny-shop%2Fproduct%2Fm20k4yfjt%2F&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795071396.LUQAc86r0TB-h1vTQA7crPrVE0ikxiz-aZuIuSDYxVc",
       "currency": "TWD",
       "price": 5880.0,
       "price_twd": 5880,
@@ -121,7 +103,16 @@
     },
     {
       "name": "BigGo:iOPEN Mall(皇奕科技)",
-      "url": "https://biggo.com.tw/r/?i=tw_mall_iopenmall&id=P1405201289171&purl=https%3A%2F%2Fmall.iopenmall.tw%2F014052%2Findex.php%3Faction%3Dproduct_detail%26prod_no%3DP1405201289171&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795067582.jtlr3Y8kbjXpBjWkWPWm9rNLZEDsPn09P6ehs65fKwQ",
+      "url": "https://biggo.com.tw/r/?i=tw_mall_iopenmall&id=P1405201289171&purl=https%3A%2F%2Fmall.iopenmall.tw%2F014052%2Findex.php%3Faction%3Dproduct_detail%26prod_no%3DP1405201289171&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795071396.qcHVQjk6ajGbPEWHNj9pvuT2PTXaGYGPYjndv9mwhN0",
+      "currency": "TWD",
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
+    },
+    {
+      "name": "BigGo:酷澎 Coupang",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_coupang&id=729196951027844&purl=https%3A%2F%2Fcoupang.onelink.me%2FyowQ%3FpageKey%3D729196951027844%26ctag%3D729196951027844%26itemId%3D729196951093384%26vendorItemId%3D729196951093358%26pid%3Dcoupang_partners%26c%3DAF8782393%26is_retargeting%3Dtrue%26af_reengagement_window%3D7d%26af_c_id%3DAF8782393%26af_sub5%3DTWAFSDP%26af_click_lookback%3D7d%26deep_link_value%3Dcoupang%253A%252F%252Fproduct%253FpId%253D729196951027844%2526itemId%253D729196951093384%2526vendorItemId%253D729196951093358%26af_r%3Dhttps%253A%252F%252Flink.tw.coupang.com%252Fre2%252FTWAFSDP%253Flptag%253DAF8782393&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795071396.W2gwZigJRIkQFBQnt340feWYgONSbnRYJMFwNLUQc8M",
       "currency": "TWD",
       "price": 5880.0,
       "price_twd": 5880,
@@ -130,7 +121,7 @@
     },
     {
       "name": "BigGo:Yahoo購物中心",
-      "url": "https://biggo.com.tw/r/?i=tw_pec_ybuy&id=12241070&purl=https%3A%2F%2Ftw.buy.yahoo.com%2Fgdsale%2FSVICLOUD-%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-15P-%E6%99%BA%E6%85%A7%E6%95%B8%E4%BD%8D%E9%9B%BB%E8%A6%96%E7%9B%92-%E8%B2%B7%E5%B0%B1%E9%80%81%E7%A6%AE%E5%8C%85%E7%B5%84%E5%90%88-3%E9%81%B81-%E9%A1%8F%E8%89%B2%E9%9A%A8%E6%A9%9F%E8%B4%88%E9%80%81-%E9%80%81%E5%AE%8C%E7%82%BA%E6%AD%A2-12241070.html&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795067582.gmOEC6_W9p5CpvqSt_bCwo2Julcx0nR64rpd_tHrNig",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_ybuy&id=12241070&purl=https%3A%2F%2Ftw.buy.yahoo.com%2Fgdsale%2FSVICLOUD-%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-15P-%E6%99%BA%E6%85%A7%E6%95%B8%E4%BD%8D%E9%9B%BB%E8%A6%96%E7%9B%92-%E8%B2%B7%E5%B0%B1%E9%80%81%E7%A6%AE%E5%8C%85%E7%B5%84%E5%90%88-3%E9%81%B81-%E9%A1%8F%E8%89%B2%E9%9A%A8%E6%A9%9F%E8%B4%88%E9%80%81-%E9%80%81%E5%AE%8C%E7%82%BA%E6%AD%A2-12241070.html&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795071396.SH1AEJURHGRYPvXrf24CvE2_QSTvNzBVyUqkWAzfOzU",
       "currency": "TWD",
       "price": 5880.0,
       "price_twd": 5880,
@@ -139,7 +130,16 @@
     },
     {
       "name": "BigGo:Yahoo購物中心",
-      "url": "https://biggo.com.tw/r/?i=tw_pec_ybuy&id=11329195&purl=https%3A%2F%2Ftw.buy.yahoo.com%2Fgdsale%2FSVICLOUD%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-10P-4K-%E6%97%97%E8%89%A6%E8%AA%9E%E9%9F%B3%E9%9B%BB%E8%A6%96%E7%9B%92-%E7%B6%B2%E8%B7%AF%E6%95%B8%E4%BD%8D-%E6%99%BA%E6%85%A7%E6%A9%9F%E9%A0%82%E7%9B%92-%E5%AE%89%E5%8D%93%E6%A9%9F%E4%B8%8A%E7%9B%92-Netfl-11329195.html&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795067582.ZecQVadEXwnGXrLdl8mw_HfuhF3Eb8SGIjlm4Nkc76g",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_ybuy&id=11329195&purl=https%3A%2F%2Ftw.buy.yahoo.com%2Fgdsale%2FSVICLOUD%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-10P-4K-%E6%97%97%E8%89%A6%E8%AA%9E%E9%9F%B3%E9%9B%BB%E8%A6%96%E7%9B%92-%E7%B6%B2%E8%B7%AF%E6%95%B8%E4%BD%8D-%E6%99%BA%E6%85%A7%E6%A9%9F%E9%A0%82%E7%9B%92-%E5%AE%89%E5%8D%93%E6%A9%9F%E4%B8%8A%E7%9B%92-Netfl-11329195.html&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795071396.Y2a1xIQNvFiC2PLBhPeVJzkpmXTcP8CJhETZUkwTXc4",
+      "currency": "TWD",
+      "price": 5880.0,
+      "price_twd": 5880,
+      "error": null,
+      "is_lowest": true
+    },
+    {
+      "name": "BigGo:酷澎 Coupang",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_coupang&id=729896242151434&purl=https%3A%2F%2Fcoupang.onelink.me%2FyowQ%3FpageKey%3D729896242151434%26ctag%3D729896242151434%26itemId%3D729896242135053%26vendorItemId%3D729896238055510%26pid%3Dcoupang_partners%26c%3DAF8782393%26is_retargeting%3Dtrue%26af_reengagement_window%3D7d%26af_c_id%3DAF8782393%26af_sub5%3DTWAFSDP%26af_click_lookback%3D7d%26deep_link_value%3Dcoupang%253A%252F%252Fproduct%253FpId%253D729896242151434%2526itemId%253D729896242135053%2526vendorItemId%253D729896238055510%26af_r%3Dhttps%253A%252F%252Flink.tw.coupang.com%252Fre2%252FTWAFSDP%253Flptag%253DAF8782393&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795071396.Qffi0qcY4kMQc-LINm2GPIwTkzypgZ9oLEyfV0BNtv4",
       "currency": "TWD",
       "price": 5880.0,
       "price_twd": 5880,
@@ -148,7 +148,7 @@
     },
     {
       "name": "BigGo:Yahoo購物中心",
-      "url": "https://biggo.com.tw/r/?i=tw_pec_ybuy&id=12284664&purl=https%3A%2F%2Ftw.buy.yahoo.com%2Fgdsale%2FSVICLOUD%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-15P-4K%E8%AA%9E%E9%9F%B3%E6%99%BA%E6%85%A7%E9%9B%BB%E8%A6%96%E7%9B%92-%E5%AE%89%E5%8D%93%E6%A9%9F%E4%B8%8A%E7%9B%92-12284664.html&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795067582.W_zeGWZZlIdAfmZyHqZpRmH2QFya8phm76JusA3WmEE",
+      "url": "https://biggo.com.tw/r/?i=tw_pec_ybuy&id=12284664&purl=https%3A%2F%2Ftw.buy.yahoo.com%2Fgdsale%2FSVICLOUD%E5%B0%8F%E9%9B%B2%E7%9B%92%E5%AD%90-15P-4K%E8%AA%9E%E9%9F%B3%E6%99%BA%E6%85%A7%E9%9B%BB%E8%A6%96%E7%9B%92-%E5%AE%89%E5%8D%93%E6%A9%9F%E4%B8%8A%E7%9B%92-12284664.html&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795071396.KnAmWjKadf0I-fibEOgkDvJ-E3x28GDVJzgb9vLHYsI",
       "currency": "TWD",
       "price": 5880.0,
       "price_twd": 5880,
@@ -157,7 +157,7 @@
     },
     {
       "name": "BigGo:樂天市場(3C達人 宇威通訊  二手機專賣店)",
-      "url": "https://biggo.com.tw/r/?i=tw_pmall_rakuten&id=ctlpaint_1NLX28EUW&purl=https%3A%2F%2Fwww.rakuten.com.tw%2Fshop%2Fctlpaint%2Fproduct%2F1nlx28euw%2F&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795067582.VY986mRZN1dI6CwP7-2htvxqifz6M5GBlldz6hbRH00",
+      "url": "https://biggo.com.tw/r/?i=tw_pmall_rakuten&id=ctlpaint_1NLX28EUW&purl=https%3A%2F%2Fwww.rakuten.com.tw%2Fshop%2Fctlpaint%2Fproduct%2F1nlx28euw%2F&lb=product_searchpage&q=%E5%B0%8F%E9%9B%B215P&rs=1795071396.WLUHp1-YVU8ZQHXw5CqfKUK_pIi-rTrCvA94-kLzV48",
       "currency": "TWD",
       "price": 5880.0,
       "price_twd": 5880,
